@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: 'Inter', 'Inter Fallback';
+  
+  --color-background: #ffffff;
+  --color-foreground: #0a0a0a;
+  --color-card: #ffffff;
+  --color-card-foreground: #0a0a0a;
+  --color-muted: #f5f5f5;
+  --color-muted-foreground: #737373;
+  --color-border: #e5e5e5;
+  --color-accent: #f5f5f5;
+  --color-accent-foreground: #0a0a0a;
+
+  @media (prefers-color-scheme: dark) {
+    --color-background: #0a0a0a;
+    --color-foreground: #fafafa;
+    --color-card: #0a0a0a;
+    --color-card-foreground: #fafafa;
+    --color-muted: #262626;
+    --color-muted-foreground: #a3a3a3;
+    --color-border: #262626;
+    --color-accent: #262626;
+    --color-accent-foreground: #fafafa;
+  }
+}
+
+body {
+  color: var(--color-foreground);
+  background: var(--color-background);
+}
